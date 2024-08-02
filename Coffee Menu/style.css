@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #222c38;
+    --main-color: #141b25;
+    --box-color: radial-gradient(circle, #1f2630, #131a24);
+    --txt-color: #465363;
+    --price-color: #838d99;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: white;
+    text-decoration: none;
+    min-width: 1280px;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-content: end;
+}
+
+.search {
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+    color: var(--txt-color);
+}
+
+.logo-img {
+    display: flex;
+    align-items: end;
+    font-family: Calistoga;
+    color: var(--txt-color);
+    text-decoration: none;
+}
+
+.logo-img img {
+    width: 50px;
+}
+
+.main_box {
+    height: 100vh;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 45px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin: 0px;
+    background: var(--box-color);
+    border-radius: 20px;
+    width: 80%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title {
+    font-family: Calistoga;
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 30px;
+    letter-spacing: 2.5px;
+}
+
+.img img {
+    width: 400px;
+}
+
+.colored {
+    color: var(--txt-color);
+}
+
+.disc {
+    font-family: Calistoga;
+    font-weight: lighter;
+    color: var(--txt-color);
+    font-size: small;
+    line-height: 1.5;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    font-family: Calistoga;
+    font-weight: 500;
+    color: var(--price-color);
+    padding: 20px 0px;
+    padding-right: 30px;
+}
+
+.btn {
+    background-color: transparent;
+    width: 200px;
+    height: 40px;
+    border-radius: 150px;
+    border-color: var(--txt-color);
+    color: var(--txt-color);
+}
+
+footer {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+footer a {
+    font-family: Calistoga;
+    color: var(--txt-color);
+    text-decoration: none;
+    font-weight: 300;
+}
